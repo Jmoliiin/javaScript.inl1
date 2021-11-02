@@ -56,6 +56,9 @@ function button(){
 
 button();
 
+function onSubmit(){
+    alert("submitted")
+}
  const  valid = document.querySelectorAll('.validation')
     valid.forEach(element=> {
         
