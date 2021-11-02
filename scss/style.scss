@@ -1,0 +1,159 @@
+$primaryColor: #ee8c5e;
+$secundaryColor: #9c8877;
+$nice-color:#dfdddd;
+$box-sh-color: 2px 2px 4px rgba(0, 0, 0,0.1);
+$fb-color: #4f70b5; 
+$validColour:green;
+$invalidColour:red;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: rgb(36, 36, 36);
+    background-color: $nice-color;
+    .navbar{
+        background-color: white;
+        box-shadow: $box-sh-color;
+        .container{
+            background-color: white;
+        }
+        .navbar-brand{
+            img{
+                width: 50px;
+                margin-left: 30px;
+            }
+        }
+        
+    }
+    .container{
+        padding-left: 2px;
+        background-color: rgb(255, 255, 255);
+        .row{box-shadow: $box-sh-color;
+            .content{
+                box-shadow: $box-sh-color;
+                .image{
+                    width: 100%;
+                    margin-left: 0px;
+                    img{
+                        width: 100%;
+                       
+                       
+                    }
+                }
+            }
+            // !style rules for form section
+            form{
+                padding: 50px;
+                div{
+                    position: relative;
+                    margin-bottom: 10px;
+                }
+                .social{
+                    text-align: center; 
+                    .titel{
+                        
+                            font-size: 28px;
+                            font-weight: bold;
+                            padding-bottom: 30px;
+                            border-bottom: $secundaryColor solid 2px;
+                    }
+                    .question{
+                        font-size: 15px;
+                        span{
+                            color: $primaryColor;
+                            cursor: pointer; 
+                        }
+                    }
+                    .btn{
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 15px;
+                        padding: 0px;  
+                        .btn-1,
+                        .btn-2{
+                            padding: 10px 5px;
+                            width: 100%; 
+                            border: 2px solid #c4c4c4;
+                            border-radius: 8px;
+                            box-shadow: $box-sh-color;
+                            display: flex;
+                            gap: 15px;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .btn-2{
+                            background-color: $fb-color;
+                            color: white;
+                            border: none;
+                            &:hover{
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                    .or{
+                        text-align: center; 
+                        padding-top: 20px;
+                        border-top: $secundaryColor solid 3px;
+                        p{
+                            margin-top: 10px ;
+                            margin-bottom: 30px;
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                
+                }
+                input{
+                    width: 100%;
+                    border-radius: 8px;
+                    border: solid rgb(199, 199, 199) 2px;
+                    height: 40px;
+                    padding: 0px 33px;
+                    outline: none; // ! Tar bort kanter vid click
+                    box-shadow: $box-sh-color;
+                     
+                    }
+                label{
+                    display: block;
+                    margin-bottom: 2px;
+                }
+                i{
+                    position: absolute;
+                    padding: 10px;
+                }
+                button{
+                    margin-top: 15px;
+                    margin-bottom: 40px;
+                    width: 100%;
+                    height: 45px;
+                    background-color: $secundaryColor;
+                    border: none;
+                    border-radius: 8px;
+                    color: rgb(255, 255, 255);    
+                    font-size: 20px;
+                    cursor: pointer;
+                    box-shadow: $box-sh-color;
+                    transition: all 0.1s ease;
+                    &:hover{
+                            opacity: 0.9;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+
+
+
+
+.invalid-feedback{
+    font-size: 12px;
+    margin-top: 5px; 
+}
