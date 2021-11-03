@@ -7,19 +7,19 @@ function minValue(str,minValue){
 
 function validateZipCode(str){
     const r = /\b\d{5}\b/g;
-    const zip=str.trim();
-        if( r.test(zip)) 
+    const t= /^\d{3} \d{2}$/
+        if( r.test(str) || t.test(str)) 
             return true
         
 }
 
 function validateAge(dateOfBirth){
     let dob=new Date(dateOfBirth);
-
     let monthDiff=Date.now()-dob.getTime();
     let age_dt=new Date(monthDiff);
     var year = age_dt.getUTCFullYear();
     var age=Math.abs(year-1970)
+    
     if (age>17)
     return true
     
@@ -37,6 +37,15 @@ function comparePassword(str,password){
         return true
     }
 }
+
+// function strongPassword(str){
+//     const r= /(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
+//     if(r.test(str)){
+//        document.getElementById('strongPassword').innerHTML ="strong pasword";
+//        alert("bra")
+//     }
+
+// }
 
 function button(){
     const button =document.querySelector('button');
@@ -165,7 +174,8 @@ function onSubmit(){
                 
                 
             })
-          }[]
+          }
+        //   []
         if (element.id ==="inputPassword2"){
                 const passwordelement=document.querySelector("#inputPassword");
                 const password=passwordelement;
@@ -185,7 +195,8 @@ function onSubmit(){
                     }
 
                 })
-        }[]
+        }
+        // []
         // button();
         
     })
