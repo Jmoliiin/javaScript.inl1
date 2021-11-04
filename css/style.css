@@ -175,8 +175,18 @@ body .container .row button:hover {
   opacity: 0.9;
 }
 
+.passwordWeek,
+.passwordStrong,
 .invalid-feedback {
   font-size: 12px;
   margin-top: 5px;
+}
+
+.passwordStrong {
+  color: green;
+}
+
+.passwordWeek {
+  color: orange;
 }
 /*# sourceMappingURL=style.css.map */
